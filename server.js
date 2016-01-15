@@ -8,7 +8,7 @@ var mongoose = require('./config/mongoose'),
 
 var db = mongoose();
 var app = express();
-app.listen(3000);
+app.listen(3000);//app.listen(port/path, listener)下面的console.log(并不是真正的linstened)
 module.export = app;
 
 console.log('Server running at http://localhost:3000');
